@@ -1,0 +1,240 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Lato;
+	font-size: 16px;
+	line-height: 1.4;
+	height: 100%;
+	padding: 0;
+	margin:0;
+	background-color: #E5E6EA;
+
+
+	&.active {
+		position: fixed;
+	}
+
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+} 
+
+#movielist {
+    display: inline-block;
+    width: 100%;
+	 
+        .movie {
+        height: 150px;
+        border-bottom: solid 1px #eee;
+        padding-top: 10px;
+        background-color: #fff;
+        position: relative;
+    
+
+       
+        .link {
+            display: block;
+            height: 150px;
+            width: auto;
+        }
+        .note {
+            width: 50px;
+            height: 50px;
+            border: solid 5px #FDCA49;
+            display: inline-block;
+            border-radius: 50px;
+            position: absolute;
+            right: 10px;
+            top: 39px;
+            p {
+                display: block;
+                text-align: center;
+                line-height: 41px;
+                height: 50px;
+                font-weight: 700;
+                }
+            }
+            .poster {
+                top: 11px;
+                display: inline-block;
+                width: auto;
+                img {
+                    width: 80px;
+                    height: 110px;
+                }
+            }
+            .movieDetails {
+                position: relative;
+                top: 14px;
+                display: inline-block;
+                width: 50%;
+                vertical-align:top;
+                padding-left: 16px;
+                h2 {
+                    font-size: 25px;
+                    font-weight: bold;
+                    line-height: 32px;
+                }
+                p {
+                    margin-top: 7px;
+                    color: #9B9B9B;
+                }
+            }
+        }
+    }
+    #theaterlist {
+        margin-top: 20px;
+
+        .theater {
+        margin-top: 10px;
+        width: auto;
+        border-bottom: solid 1px #eee;
+        padding: 10px;
+        width: auto;
+        border-bottom: solid 1px #eee;
+
+        position: relative;
+        a {
+            display: block;
+            p {
+                margin-top: 0px;
+                font-size: 15px;
+            }
+            .info {
+                display: inline-block;
+                margin-right: 20px;
+                position: relative;
+                bottom: 4px;
+                h2 {
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                p {
+                    color: #8E8E8F;
+                    font-weight: 100;
+                }
+            }
+            .adresse {
+                display: inline-block;
+                width: 65%;
+                vertical-align: top;
+                font-weight: 100;
+                p {
+                    margin-bottom: 5px;
+                    font-weight: 400;
+                }
+                .street {
+                color: #8E8E8F;
+                font-size: 14px;
+            }
+        }
+        .distance {
+            position: absolute;
+            right: 20px;
+            color: #FCC955;
+        }
+    }
+}
+}
+
+.header {
+	position: static;
+	left: 0px;
+	right: 0px;
+	height: 65px;
+	line-height: 65px;
+	color: #fff;
+	background-color: #141E34;
+}
+
+
+.logo {
+	font-weight: 700;
+	padding: 0 25px;
+	float: left;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.container {
+
+    .details {
+        width: 36%;
+  display: inline-block;
+    }
+
+    .search {
+        padding: 20px 20px 0 0px;
+        .form {
+        
+            input[type=search]  {
+                  border: 1px solid #eee;
+  padding: 10px;
+  width: 50%;
+            }
+        }
+    }
+	
+	width: 960px;
+    padding: 30px;
+    margin-left: auto;
+     margin-right: auto;
+	background-color: #fff;
+
+    .tab {
+        display: none;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    p.more {
+     display: none;
+     a.more {
+        display: block;
+        width: 100%;
+        background-color: #FDCA49;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        position: relative;
+        bottom: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}
+ p.buy {
+            display: none;
+            a.buy {
+                display: block;
+                width: 100%;
+                background-color: #E54D4A;
+                text-align: center;
+                height: 60px;
+                line-height: 60px;
+                position: relative;
+                bottom: 0;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+        }
+
+}
+.content {
+	padding-top: 66px;
+}
