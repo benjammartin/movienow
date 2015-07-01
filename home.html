@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+   <head>
+      <title>MovieNow</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+   </head>
+   <body>
+      <header class="header">
+         <span class="icon" id="icon"></span>
+         <a href="home.html" class="logo">Movienow</a>
+      </header>
+      <div class="content container">
+         <div class="tab" id="tab">
+            <a href="#movielist" class="active animated fadeIn" >Movies</a>
+            <a href="#theaterlist" >Theaters</a>
+         </div>
+
+
+  
+         <div class="col-md-8">
+            <div id="movielist">
+               <h2 class="section_title">Movies</h2>
+               <div class="movie">
+                  <a  href="fiche_film.html" class="link" >
+                     <div class="poster"><img src="http://fr.web.img3.acsta.net/r_160_240/b_1_d6d6d6/pictures/15/04/16/13/58/571071.jpg"></div>
+                     <div class="movieDetails">
+                        <h3>Mad Max </h3>
+                        <p>Action/Adventure</p>
+                        <p>190 minutes</p>
+                     </div>
+                     <div class="note">
+                        <p>11</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="movie">
+                  <a  href="fiche_film.html" class="link" >
+                     <div class="poster"><img src="http://fr.web.img3.acsta.net/r_160_240/b_1_d6d6d6/pictures/15/04/16/13/58/571071.jpg"></div>
+                     <div class="movieDetails">
+                      <h3>Mad Max </h3>
+                        <p>Action/Adventure</p>
+                        <p>190 minutes</p>
+                     </div>
+                     <div class="note">
+                        <p>11</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="movie">
+                  <a  href="fiche_film.html" class="link" >
+                     <div class="poster"><img src="http://fr.web.img3.acsta.net/r_160_240/b_1_d6d6d6/pictures/15/04/16/13/58/571071.jpg"></div>
+                     <div class="movieDetails">
+                        <h3>Mad Max </h3>
+                        <p>Action/Adventure</p>
+                        <p>190 minutes</p>
+                     </div>
+                     <div class="note">
+                        <p>11</p>
+                     </div>
+                  </a>
+               </div>
+               <p class="more"><a class="more" href="#" id="load-more">see More</a></p>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div id="theaterlist">
+            	<h2 class="section_title">Theaters</h2>
+               <div class="theater">
+                  <a class="link" >
+                     <div class="adresse">
+                        <p>Madison Theatre</p>
+                        <p class="street">1036 Madison Ave, Albany, NY 12208</p>
+                     </div>
+                     <span class="distance">300m</span>
+                  </a>
+               </div>
+               <div class="theater">
+                  <a class="link" >
+                     <div class="adresse">
+                        <p>Madison Theatre</p>
+                        <p class="street">1036 Madison Ave, Albany, NY 12208</p>
+                     </div>
+                     <span class="distance">300m</span>
+                  </a>
+               </div>
+               <div class="theater">
+                  <a class="link" >
+                     <div class="adresse">
+                        <p>Madison Theatre</p>
+                        <p class="street">1036 Madison Ave, Albany, NY 12208</p>
+                     </div>
+                     <span class="distance">300m</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+
+      <script type="text/javascript">
+      $( '#tab a ' ).on( 'click', function() {
+            $( this ).parent().find( 'a.active' ).removeClass( 'active animated fadeIn' );
+            $( this ).addClass( 'active' ).addClass('animated fadeIn');
+
+            var name = $( this ).attr("href");
+            $('#movielist').removeClass('active');
+            $('#theaterlist').removeClass('active');
+            $( name ).addClass('active');
+
+      });
+      </script>
+   </body>
+</html>

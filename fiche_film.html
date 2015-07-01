@@ -14,7 +14,7 @@
       </header>
       <div class="content container">
          <div class="col-md-8">
-            <div id="movielist" >
+            <div id="movielist" style="display: block">
                <h2 class="section_title">Movies</h2>
                <div class="movie active">
                   <a  href="page.html" class="link" >
@@ -30,16 +30,22 @@
                   </a>
                </div>
                <div class="details">
-                  <h2 class="section_title">Details</h2>
+              <h2 class="section_title">Details</h2>
                <p>In a stark desert landscape where humanity is broken, two rebels just might be able to restore order: Max, a man of action and of few words, and Furiosa, ..</p>
            </div>
             </div>
          </div>
          <div class="col-md-4">
+         	<div class="tab" id="tab">
+            <a href="#movies">Details</a>
+            <a href="#theaters" class="active animated fadeIn">Times</a>
+         </div>
             <div id="theaterlist">
-               <h2 class="section_title">Theaters</h2>
-                <div class="theater">
-               <a  href="" class="link" >
+            	<h2 class="section_title">Theaters</h2>
+            	<div class="search">
+            <form class="form"><input type="search" placeholder="Search theater, time" name="the_search"></form>
+            	 <div class="theater active">
+               <a  href="ticket.html" class="link" >
                   <div class="info">
                      <h3>15:00</h3>
                      <p>VOST/3D</p>
@@ -51,41 +57,47 @@
                   <span class="distance">300m</span>
                </a>
             </div>
+            <div class="theater active">
+               <a  href="ticket.html" class="link" >
+                  <div class="info">
+                     <h3>15:00</h3>
+                     <p>VOST/3D</p>
+                  </div>
+                  <div class="adresse">
+                     <p>Madison Theatre</p>
+                     <p class="street">1036 Madison Ave, Albany, NY 12208</p>
+                  </div>
+                  <span class="distance">300m</span>
+               </a>
             </div>
-               <div class="checkout">
-         <span class="title"><p>Ticket</p> </span>
-         <span class="category">
-            <h3>Adult</h3>
-            <p>19,00$</p>
-            <select class="select" name="select">
-               <option>1</option>
-               <option>2</option>
-               <option>3</option>
-            </select>
-         </span>
-         <span class="category">
-            <h3>Children</h3>
-            <p>19,00$</p>
-            <select class="select" name="select">
-               <option>1</option>
-               <option>2</option>
-               <option>3</option>
-            </select>
-         </span>
-         <span class="category">
-            <h3>Senior</h3>
-            <p>19,00$</p>
-            <select class="select" name="select">
-               <option>1</option>
-               <option>2</option>
-               <option>3</option>
-            </select>
-         </span>
-        </div>
-        <p class="more buy "><a class="more buy " href="#" id="load-more">buy</a></p>
+            <div class="theater active">
+               <a  href="ticket.html" class="link" >
+                  <div class="info">
+                     <h3>15:00</h3>
+                     <p>VOST/3D</p>
+                  </div>
+                  <div class="adresse">
+                     <p>Madison Theatre</p>
+                     <p class="street">1036 Madison Ave, Albany, NY 12208</p>
+                  </div>
+                  <span class="distance">300m</span>
+               </a>
             </div>
-         
-
+            <div class="theater">
+               <a  href="ticket.html" class="link" >
+                  <div class="info">
+                     <h3>15:00</h3>
+                     <p>VOST/3D</p>
+                  </div>
+                  <div class="adresse">
+                     <p>Madison Theatre</p>
+                     <p class="street">1036 Madison Ave, Albany, NY 12208</p>
+                  </div>
+                  <span class="distance">300m</span>
+               </a>
+            </div>
+            <p class="more"><a class="more" href="#" id="load-more">see More</a></p>
+            </div>
 
          </div>
       </div>
@@ -94,3 +106,4 @@
       <script type="text/javascript" src="js/app.js"></script>
    </body>
 </html>
+
