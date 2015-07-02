@@ -1,0 +1,177 @@
+@import 'variables.less';
+
+.content {
+	background-color: @white;
+	padding-top: 65px;
+	@media only screen and (max-width:@mobile) {
+		padding: 0;     
+    }
+    .tab {
+    	display: none;
+    	@media only screen and (max-width:@mobile) {
+    		display: block;
+    		background: @white;
+    		height: 45px;
+    		z-index: 3;
+    		position: relative;
+    		border-bottom: solid 1px @border;
+    		a {
+    			color: @link;
+    			display: inline-block;
+    			line-height: 45px;
+    			width: 49%;
+    			text-align: center;
+    			font-size: 16px;
+    			font-weight: @bold;
+    			letter-spacing: 1px;
+    			background: transparent;
+    			border-radius: 0;
+    			text-decoration: none;
+    			&.active {
+    				border-bottom: solid 4px #E84C45;
+    				transition-duration: 0.3s;
+    				color: @link;
+    			}
+    		}    
+    	}
+    }
+    #movielist {
+    	display: inline-block;
+    	width: 100%;
+    	padding-right: 25px;
+    	@media only screen and (max-width:@mobile) {
+    		padding-right: 0px;   
+    	}
+    	.section_title {}
+    	.movie {
+    		height: 150px;
+    		border-bottom: solid 1px #eee;
+    		background-color: #fff;
+    		position: relative;
+    		padding: 10px 0 10px 0;
+    		@media only screen and (max-width:@mobile) {
+    			margin: 0 auto;
+    			width: auto;
+    			padding: 10px;  
+    		}
+    	}
+    	.link {
+    		display: block;
+            height: 150px;
+            width: auto;
+            .note {
+            	width: 50px;
+            	height: 50px;
+                border: solid 5px #FDCA49;
+                display: inline-block;
+                border-radius: 50px;
+                position: absolute;
+                right: 10px;
+                top: 39px;
+                color: #000;
+                p {
+                	display: block;
+                    text-align: center;
+                    line-height: 41px;
+                    height: 50px;
+                    font-weight: @bold;
+                }
+            }
+            .poster {
+                top: 11px;
+                display: inline-block;
+                width: auto;
+                img {
+                	width: 96px;
+                    height: 128px;
+                }
+            }
+            .movieDetails {
+                position: relative;
+                top: 14px;
+                display: inline-block;
+                width: 50%;
+                vertical-align:top;
+                padding-left: 16px;
+                @media only screen and (max-width:@mobile) {
+                    top: 0px;  
+                }
+                h3 {
+                	font-size: 25px;
+                    font-weight: bold;
+                    line-height: 32px;
+                    color: #000;
+                }
+                p {
+                	margin-top: 7px;
+                    color: #9B9B9B;
+                }
+            }
+    	}
+    	p.more{}
+    }
+    #theaterlist {
+        	.section_title {}
+        	.theater {
+        		width: auto;
+        		border-bottom: solid 1px #eee;
+        		position: relative;
+        		padding: 10px 0 10px 0;
+        		background-color: @white;
+        		&.active {
+        			display: block;
+        		}
+        		@media only screen and (max-width:@mobile) {
+        			padding: 10px;
+        			display: none;
+        		}
+        		.link {
+        			display: block;
+        			p {
+        				margin-top: 0px;
+        				font-size: 15px;
+        			}
+        			.info {
+        				width: 25%;
+        				display: inline-block;
+        				margin-right: 10px;
+        				position: relative;
+        				h3 {
+        					font-size: 18px;
+        					font-weight: @bold;
+        					color: #000;
+        				}
+        				p {
+        					color: #8E8E8F;
+        					font-weight: 100;
+        				}
+        			}
+        			.adresse {
+        				display: inline-block;
+        				width: 65%;
+        				vertical-align: top;
+        				font-weight: 100;
+        				p {
+        					margin-bottom: 5px;
+        					font-weight: 400;
+        					color: #000;
+        				}
+        				.street {
+        					color: #8E8E8F;
+        					font-size: 14px;
+        					width: 90%;
+        				}
+        			}
+        			.distance {
+        				position: absolute;
+        				right: 10px;
+        				color: #FCC955;
+        			
+        			}
+        		}
+        	}
+        }
+    }
+
+
+

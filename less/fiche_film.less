@@ -1,0 +1,46 @@
+@import 'variables.less';
+
+.details {
+	display: inline-block;
+	@media only screen and (max-width:@mobile) {
+    		display: none;   
+    	}
+}
+
+.search {
+	padding: 20px 20px 0 0px;
+	@media only screen and (max-width:@mobile) {
+    		padding: 0px;
+            height: 60px;
+            line-height: 60px;
+            background-color: #eee;  
+        }
+        .form {
+        	margin-bottom: 10px;
+        	@media only screen and (max-width:@mobile) {
+        		vertical-align: middle;
+        		text-align: center;
+        		width: 70%;
+        		margin: auto;   
+        	}
+        	input[type=search] { 
+        		width: 100%;
+        		border: 1px solid #eee;
+        		padding: 10px;
+        		@media only screen and (max-width:@mobile) {
+        			-webkit-appearance: textfield;
+                    -webkit-box-sizing: content-box;
+                    border: 1px solid #eee;
+                    height: 30px;
+                    line-height: 30px;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 15px;
+                    padding: 0px; 
+          
+       		}
+		}
+	}
+}
+
+
