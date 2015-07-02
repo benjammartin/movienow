@@ -8,7 +8,7 @@ var gulp      = require('gulp'),
 // LESS TASK
 gulp.task('css', function() 
 {
-  return gulp.src('./css/*.less')    // Prend en entrée les fichiers *.less
+  return gulp.src('less/main.less')    // Prend en entrée les fichiers *.less
     .pipe(less())                      // Compile les fichiers
     .pipe(minifyCss())                 // Minifie le CSS qui a été généré
     .pipe(gulp.dest('style'));  // Sauvegarde le tout dans style
